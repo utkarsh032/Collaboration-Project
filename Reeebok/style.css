@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Header */
+/* Header styling */
+.main-header {
+    background-color: #1B1D1D;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 14px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header_icon {
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* Link styling within the navigation */
+.nav-link {
+    padding: 0 16px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    /* Ensures no underline */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-right: 1px solid grey;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+/* Remove border from the last navigation link */
+.nav-links li:last-child .nav-link {
+    border-right: none;
+}
+.nav>ul>li{
+    list-style: none;
+}
+.btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    margin-left: 16px;
+    /* Ensures spacing between buttons and other elements */
+  }
+  .btn:hover {
+    color: #ddd;
+    transform: scale(1.05);
+  }
+  /* Logo styling */
+  .header-logo {
+    width: 4rem;
+    height: auto;
+    margin-left: 16px;
+    /* Ensures spacing from other elements */
+  }
