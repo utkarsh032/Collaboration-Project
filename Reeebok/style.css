@@ -54,9 +54,11 @@ body {
 .nav-links li:last-child .nav-link {
     border-right: none;
 }
-.nav>ul>li{
+
+.nav>ul>li {
     list-style: none;
 }
+
 .btn {
     background-color: transparent;
     color: #fff;
@@ -67,15 +69,102 @@ body {
     transition: color 0.3s, transform 0.3s;
     margin-left: 16px;
     /* Ensures spacing between buttons and other elements */
-  }
-  .btn:hover {
+}
+
+.btn:hover {
     color: #ddd;
     transform: scale(1.05);
-  }
-  /* Logo styling */
-  .header-logo {
+}
+
+/* Logo styling */
+.header-logo {
     width: 4rem;
     height: auto;
     margin-left: 16px;
     /* Ensures spacing from other elements */
-  }
+}
+
+.main-nav {
+    background-color: #f5f5f5;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 7rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-item:hover {
+    color: #1b1d1d;
+    background-color: #ddd;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1b1d1d;
+    padding: 0 4px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border: none;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.express_btn {
+    background-color: #c40c2f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    gap: 10px;
+
+    p {
+        font-weight: bold;
+    }
+}
