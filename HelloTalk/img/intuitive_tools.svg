@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="52px" height="46px" viewBox="0 0 52 46" enable-background="new 0 0 52 46" xml:space="preserve">
+<g transform="translate(0 -4)">
+	<path fill="none" d="M3.059,0h43.843v43.843H3.059V0z"/>
+	<path fill="none" stroke="#343434" stroke-width="3" d="M4.5,5.578h21.588c1.656,0,3,1.343,3,3v21.588c0,1.656-1.344,3-3,3H4.5
+		c-1.657,0-3-1.344-3-3V8.578C1.5,6.921,2.843,5.578,4.5,5.578z"/>
+	<path fill="none" stroke="#343434" stroke-width="3" d="M11.637,14.755h8.333c1.657,0,3,1.343,3,3v2.216c0,1.657-1.343,3-3,3
+		h-8.333c-1.657,0-3-1.343-3-3v-2.216C8.637,16.098,9.98,14.755,11.637,14.755z"/>
+	<g>
+		<path id="a" fill="#F9F9F9" d="M24.412,19.373H49c1.656,0,3,1.343,3,3v24.588c0,1.656-1.344,3-3,3H24.412c-1.657,0-3-1.344-3-3
+			V22.373C21.412,20.716,22.755,19.373,24.412,19.373z"/>
+	</g>
+	<path fill="none" stroke="#343434" stroke-width="3" d="M25.912,20.873H47.5c1.656,0,3,1.343,3,3v21.588c0,1.656-1.344,3-3,3
+		H25.912c-1.657,0-3-1.344-3-3V23.873C22.912,22.216,24.255,20.873,25.912,20.873z"/>
+	<path fill="#343434" d="M15.804,9.176L15.804,9.176c0.845,0,1.53,0.685,1.53,1.529v17.334c0,0.844-0.685,1.529-1.529,1.529h-0.001
+		c-0.845,0-1.529-0.686-1.529-1.529V10.705C14.275,9.86,14.959,9.176,15.804,9.176z"/>
+	<path fill="#405BD3" d="M33.646,41.805l5.099-12.236l5.098,12.236H33.646z"/>
+	<path fill="none" stroke="#343434" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M29.865,42.389
+		l6.615-15.88l6.617,15.88 M33.027,36.706h7.138"/>
+</g>
+<rect x="21.36" y="17.207" fill="#343434" width="3.015" height="2.998"/>
+<rect x="21.53" y="15.373" fill="#343434" width="9.053" height="3"/>
+<rect x="27.609" y="15.047" fill="#343434" width="2.974" height="0.688"/>
+<rect x="24.141" y="15.125" fill="#343434" width="0.313" height="0.609"/>
+</svg>
