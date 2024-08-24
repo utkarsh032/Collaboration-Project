@@ -6,6 +6,57 @@
 
 body {}
 
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.section {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon img {
+  max-width: 50px;
+}
+
+/* ----- */
 .language {
   text-align: center;
   color: #313236;
@@ -199,9 +250,24 @@ body {}
 }
 
 
-
 /* Responsive design */
 @media screen and (min-width: 601px) and (max-width: 1280px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .icon img {
+    max-width: 40px;
+  }
+
   #heading {
     font-size: 28px;
   }
@@ -229,7 +295,6 @@ body {}
 
   .exchange {
     grid-template-columns: repeat(3, 1fr);
-    /* grid-gap: 10px; */
   }
 
   .language_exchange {
@@ -244,6 +309,23 @@ body {}
 }
 
 @media screen and (min-width: 360px) and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header p {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .section {
+    padding: 5px;
+  }
+
+  .icon img {
+    max-width: 45px;
+  }
+
   #heading {
     font-size: 24px;
   }
