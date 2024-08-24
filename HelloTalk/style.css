@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {}
-
 .language {
   text-align: center;
   color: #313236;
@@ -227,7 +224,7 @@ body {}
     padding: 10px;
   }
 
-  .exchange {
+  .sections-cards ,.exchange {
     grid-template-columns: repeat(3, 1fr);
     /* grid-gap: 10px; */
   }
@@ -290,3 +287,168 @@ body {}
   }
 
 }
+/* Disha's Part */
+/* Footer's Section */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+/* } */ */
+.sections-cards {
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  /* gap: 30px; */
+  /* flex-wrap: wrap; */
+  /* margin-bottom: 25px; */
+  background-color: red;
+  /* width: 80%;
+  margin: auto; */
+}
+
+.card_main {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  /* gap: 20px; */
+  /* width: 300px; */
+  text-align: center;
+  /* margin-bottom: 58px; */
+  
+}
+
+.card_main .stars {
+  color: #f39c12;
+  font-size: 1.4em;
+  margin-bottom: 35px;
+  margin-top: 18px;
+  text-align: center;
+  
+}
+
+.card_main .stars i {
+  margin-right: 15px; 
+}
+
+.card_main h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card_main p {
+  font-size: 1.1em;
+  color: #8f8d8d;
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+.card_main span {
+  font-size: 93%;
+  color: #aaa;
+}
+
+.banner {
+  background-color: rgb(65, 91, 212);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 1%;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.download-buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(63, 91, 212);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1em;
+  border: 2px solid white;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.download-buttons a:hover {
+  background-color: white;
+  color: rgb(63, 91, 212);
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  font-weight: 400;
+  line-height: 31px;
+  font-size: 12px;
+}
+
+.footer .social-follow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .social-follow p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .social-icons img {
+  width: 23px;
+  height: 23px;
+}
+
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer nav a {
+  color: #777;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.footer nav a:hover {
+  color: #000;
+}
+
+
+
+
