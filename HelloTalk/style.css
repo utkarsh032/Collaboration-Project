@@ -290,3 +290,68 @@ body {}
   }
 
 }
+
+/* Nishant's New Sections */
+.new-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  padding: 40px 20px;
+  text-align: left;
+  color: #313236;
+  font-family: 'PingFang SC', sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.new-section.image-left .section-image {
+  order: 1;
+  margin-right: 20px;
+}
+
+.new-section.image-left .text-content {
+  order: 2;
+}
+
+.new-section.image-right {
+  flex-direction: row-reverse;
+}
+
+.new-section.image-right .section-image {
+  margin-left: 20px;
+}
+
+.section-image {
+  max-width: 35%; /* Adjusted to make images slightly smaller */
+  height: auto;
+}
+
+.text-content {
+  max-width: 35%;
+  position: relative;
+}
+
+.new-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.new-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 4px;
+  background-color: #405BD3; /* Blue line color */
+}
+
+.new-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
