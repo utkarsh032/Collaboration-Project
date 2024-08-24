@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-body {}
+body {
+  width: 1280px;
+  margin: auto;
+}
 
 header {
   background-color: #fff;
@@ -307,7 +310,7 @@ header p {
   bottom: -5px;
   width: 50px;
   height: 4px;
-  background-color: #405BD3; 
+  background-color: #405BD3;
 }
 
 .new-section p {
@@ -375,19 +378,19 @@ header p {
   .section-image {
     width: 40%;
   }
-  
+
   .text-content {
     max-width: 50%;
   }
-  
+
   .new-section {
     padding: 30px 15px;
   }
-  
+
   .new-section h2 {
     font-size: 24px;
   }
-  
+
   .new-section p {
     font-size: 16px;
   }
@@ -490,4 +493,3 @@ header p {
   }
 
 }
-
