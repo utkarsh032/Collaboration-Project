@@ -54,9 +54,11 @@ body {
 .nav-links li:last-child .nav-link {
     border-right: none;
 }
-.nav>ul>li{
+
+.nav>ul>li {
     list-style: none;
 }
+
 .btn {
     background-color: transparent;
     color: #fff;
@@ -67,15 +69,17 @@ body {
     transition: color 0.3s, transform 0.3s;
     margin-left: 16px;
     /* Ensures spacing between buttons and other elements */
-  }
-  .btn:hover {
+}
+
+.btn:hover {
     color: #ddd;
     transform: scale(1.05);
-  }
-  /* Logo styling */
-  .header-logo {
+}
+
+/* Logo styling */
+.header-logo {
     width: 4rem;
     height: auto;
     margin-left: 16px;
     /* Ensures spacing from other elements */
-  }
+}
