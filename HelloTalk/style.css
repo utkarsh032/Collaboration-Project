@@ -198,6 +198,72 @@ body {}
   background-repeat: no-repeat;
 }
 
+/*Features styling */
+.new-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 40px 20px;
+  text-align: left;
+  color: #313236;
+  font-family: 'PingFang SC', sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.new-section.image-left .section-image {
+  order: 1;
+  margin-right: 20px;
+}
+
+.new-section.image-left .text-content {
+  order: 2;
+}
+
+.new-section.image-right {
+  flex-direction: row-reverse;
+}
+
+.new-section.image-right .section-image {
+  margin-left: 20px;
+}
+
+.section-image {
+  width: 50%;
+  /* max-width: 35%;  */
+  /* height: auto; */
+}
+
+.text-content {
+  max-width: 35%;
+  position: relative;
+}
+
+.new-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.new-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50px;
+  height: 4px;
+  background-color: #405BD3; 
+}
+
+.new-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
 
 
 /* Responsive design */
@@ -237,6 +303,27 @@ body {}
   }
 
   .exchange>p {
+    font-size: 16px;
+  }
+
+
+  .section-image {
+    width: 40%;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .new-section {
+    padding: 30px 15px;
+  }
+  
+  .new-section h2 {
+    font-size: 24px;
+  }
+  
+  .new-section p {
     font-size: 16px;
   }
 
@@ -289,4 +376,36 @@ body {}
     font-size: 16px;
   }
 
+  .new-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .new-section.image-left .section-image,
+  .new-section.image-right .section-image {
+    order: 2;
+    margin: 0 0 20px 0;
+    width: 80%;
+  }
+
+  .new-section.image-left .text-content,
+  .new-section.image-right .text-content {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .section-image {
+    width: 100%;
+  }
+
+  .new-section h2 {
+    font-size: 22px;
+  }
+
+  .new-section p {
+    font-size: 16px;
+  }
+
 }
+
