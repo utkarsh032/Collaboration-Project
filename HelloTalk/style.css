@@ -4,7 +4,194 @@
   box-sizing: border-box;
 }
 
-body {}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #405BD3;
+  transition: all 0.3s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid grey;
+}
+
+.top_logo {
+  display: flex;
+  align-items: center;
+}
+
+.top_options {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+
+select {
+  border: none;
+  font-size: large;
+  background-color: #405BD3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effects */
+.top_options div:hover,
+select:hover {
+  color: #f0f0f0;
+}
+
+select:hover {
+  background-color: #2e47a1;
+}
+
+.hemburger {
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.top_content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #405BD3;
+  padding: 35px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.left_part {
+  margin-top: 70px;
+  width: 50%;
+}
+
+.right_part {
+  color: white;
+  margin-top: 5%;
+}
+
+.right_part>h1 {
+  height: 10%;
+  font-size: 55px;
+  font-weight: bolder;
+  margin-bottom: 7%;
+}
+
+.right_part>div {
+  font-size: x-large;
+}
+
+/* Base styles */
+.qr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  margin: 10% 0;
+  gap: 10%;
+  padding: 0 5%;
+}
+
+.ios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ios .default-img,
+.ios .hover-img {
+  width: 100px;
+  transition: opacity 0.3s ease;
+  position: relative;
+  right: -3.35rem;
+  top: -1.25rem;
+}
+
+.ios .hover-img {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ios:hover .default-img {
+  opacity: 0;
+}
+
+.ios:hover .hover-img {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #000;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.qr>div p {
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.ios:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user_data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked+.hamburger+.top_options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  background-color: #405BD3;
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 header {
   background-color: #fff;
@@ -22,9 +209,9 @@ header p {
   line-height: 1.5;
 }
 
+/* Container */
 .container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
@@ -502,6 +689,31 @@ ul>li {
     padding: 0 5px;
   }
 
+  .top_content {
+    height: 105vh;
+  }
+
+  .qr {
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+  }
+
+  .ios {
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  .ios .default-img,
+  .ios .hover-img {
+    width: 100px;
+  }
+
+  .qr>div p {
+    font-size: medium;
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 600px) {
@@ -638,4 +850,39 @@ ul>li {
     padding: 0 20px;
   }
 
+  .top_options {
+    display: none;
+  }
+
+  .hemburger {
+    display: contents;
+  }
+
+  .top_content {
+    height: 145vh;
+  }
+
+  .qr {
+    grid-template-columns: 1fr;
+  }
+
+  .ios {
+    padding: 15px;
+    /* margin-bottom: 15px; */
+    width: 65%;
+    height: 115%;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .ios .default-img,
+  .ios .hover-img {
+    width: 80px;
+  }
+
+  .qr>div p {
+    font-size: smaller;
+  }
 }
