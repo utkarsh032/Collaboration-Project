@@ -1,0 +1,88 @@
+.parent-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 26px;
+  text-align: center;
+}
+
+#filterSelect,
+#filterInput {
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#filter,
+#reset,
+#clearLocal {
+  background-color: #9dcbff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#tableHead {
+  font-size: 22px;
+}
+
+table tr td {
+  border: 1px solid;
+  height: 28px;
+}
+
+td {
+  width: 100px;
+  font-size: 18px;
+}
+
+.sort {
+  margin-left: 10px;
+  cursor: pointer;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+}
+
+input.inputDet {
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#savingData {
+  color: green;
+}
+
+.delRow {
+  position: absolute;
+  right: -76px;
+  top: 0px;
+  color: #fff;
+  background-color: #ff553e;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+.delRow:hover {
+  font-weight: 700;
+  background-color: red;
+  cursor: pointer;
+  color: antiquewhite;
+}
+#restoreData {
+  cursor: pointer;
+  color: rgb(255, 16, 243);
+
+  font-size: 20px;
+}

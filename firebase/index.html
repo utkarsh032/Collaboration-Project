@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Practise EV</title>
+  </head>
+  <body>
+    <div class="parent-Container">
+    <div class="container">
+      <h3>Filter Employees</h3>
+
+      <select id="filterSelect" value="name">
+        <option>Name</option>
+        <option>Age</option>
+        <option>Email</option>
+        <option>Salary</option>
+      </select>
+      <input type="text" id="filterInput" placeholder="John Doe" />
+      <button id="filter">Filter</button>
+      <button id="reset">Reset</button>
+      <button id="clearLocal">Clear Local Storage</button>
+      <span id="savingData"></span>
+      <span id="restoreData"></span>
+      <h3>Employees Table</h3>
+      <table>
+        <thead id="tableHead"></thead>
+        <tbody id="tableBody"></tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td></td>
+            <td id="ageDetails"></td>
+            <td></td>
+            <td id="salaryDetails"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
