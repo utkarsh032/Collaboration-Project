@@ -33,13 +33,14 @@ function generateTableData(employees) {
     document.getElementById("tableBody").innerHTML = "List is empty";
     return;
   }
+
   Object.entries(employees[0]).forEach((element) => {
     tableHead += `<td>${element[0]}<button class="sort">sort</button></td>`;
   });
   tableHead += `</tr>`;
   document.getElementById("tableHead").innerHTML = tableHead;
 
-  employees.forEach((element) => {
+  employees.forEach((element, rowIndex) => {
     if (element != null) {
       tableRow += `<tr>`;
       Object.entries(element).forEach((el, i, arr) => {
@@ -54,6 +55,17 @@ function generateTableData(employees) {
   });
 
   document.getElementById("tableBody").innerHTML = tableRow;
+
+  // Add event listeners for change detection and row highlighting
+  const inputFields = document.querySelectorAll(".inputDet");
+  inputFields.forEach((input) => {
+    input.addEventListener("input", () => {
+      input.closest("tr").classList.add("highlight");
+      setTimeout(() => {
+        input.closest("tr").classList.remove("highlight");
+      }, 2000); // Remove highlight after 2 seconds
+    });
+  });
 
   // Sorting event listeners
   const eventSort = document.querySelectorAll(".sort");
@@ -86,6 +98,7 @@ function generateTableData(employees) {
 
   calcDetails(employees);
 }
+
 
 // Sort functions
 function sortDataAsc(type, employees) {
